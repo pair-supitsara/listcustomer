@@ -1,0 +1,17 @@
+.nav {
+    list-style-type: none;
+    background-color: var(--midnight-blue);
+}
+.nav-item {
+    display: inline-block;   
+}
+
+.nav-item a {
+    padding: .75rem 1.25rem;
+    text-decoration: none;
+    font-weight: 800;
+    display: block;
+}
+.nav-item a.active {
+    color: red;
+}
