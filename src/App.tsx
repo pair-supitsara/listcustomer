@@ -1,16 +1,16 @@
 import React from 'react';
-import './App.css';
+import classes from './App.module.css';
 import { Outlet } from "react-router-dom";
 import Navigation from './components/Navigation.tsx';
 
 const App: React.FC = () => {
   return (
-    <div>
+    <div className={classes.container}>
       <h1>Welcome to App.tsx</h1>
-      <nav>
+      <nav className={classes.menu}>
         <Navigation />
       </nav>
-      <main>
+      <main className={classes.content}>
         <Outlet />
       </main>
     </div>

@@ -16,16 +16,16 @@ const router = createBrowserRouter([
     children: [
       {
         path: "home",
-        element: <Home />,
+        element: <Home />
         //loader: teamLoader,
       },
       {
         path: "list",
-        element: <List />,
+        element: <List />
         //loader: teamLoader,
       },
     ],
-  },
+  }
 ]);
 const rootElement = document.getElementById("root")
 if (!rootElement) {

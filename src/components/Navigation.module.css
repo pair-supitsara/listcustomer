@@ -1,6 +1,7 @@
 .nav {
     list-style-type: none;
-    background-color: var(--midnight-blue);
+    background-color: var(--blue);
+    color: var(--white);
 }
 .nav-item {
     display: inline-block;   
@@ -11,7 +12,8 @@
     text-decoration: none;
     font-weight: 800;
     display: block;
+    color: var(--white);
 }
 .nav-item a.active {
-    color: red;
+    color: var(--yellow);
 }
