@@ -3,12 +3,15 @@ import { useSelector } from "react-redux";
 
 
 const Home: React.FC = () => {
-  const isAuthen = useSelector((state: any) => state.authen.isAuthen);
-
+  const authen = useSelector((state: any) => state.authen);
+  console.log('Home.tsx')
   return (
     <div>
       <h1>Home</h1>
-      <span>isAuthen : { isAuthen ? 'true' : 'false' }</span>
+      <p>isAuthen : { authen.isAuthen ? 'true' : 'false' }</p>
+      <p>usercode : { authen.usercode }</p>
+      <p>agent : cashier2</p>
+      <p>permission : sup</p>
     </div>
   );
 };

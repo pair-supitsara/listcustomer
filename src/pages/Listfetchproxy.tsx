@@ -1,27 +1,27 @@
 import React, { useState } from "react";
 import Listcustomer from '../components/Listcustomer.tsx';
 
-const List: React.FC = () => {
+const Listthunkredux: React.FC = () => {
   const [listcustomer, setListcustomer] = useState([{
       id: '111',
-      name: 'ทดสอบชื่อ ทดสอบนามสกุล'
+      name: 'firstname1 lastname1'
     },
     {
       id: '112',
-      name: 'ทดสอบชื่อ ทดสอบนามสกุล'
+      name: 'firstname2 lastname2'
     },
     {
       id: '113',
-      name: 'ทดสอบชื่อ ทดสอบนามสกุล'
+      name: 'firstname3 lastname3'
     }
   ])
-  console.log('List.tsx')
+
   return (
     <div>
-      <h1>List</h1>
+      <h1>List thunk Redux</h1>
       <Listcustomer lists={listcustomer}/>
     </div>
   );
 };
 
-export default List;
+export default Listthunkredux;
