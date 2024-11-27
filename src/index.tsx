@@ -5,6 +5,10 @@ import './index.css';
 import App from "./App.tsx";
 import Home from './pages/Home.tsx';
 import List from './pages/List.tsx';
+import Listfetch from './pages/Listfetch.tsx';
+import Listcustomhook from './pages/Listcustomhook.tsx';
+import Listthunkredux from './pages/Listthunkredux.tsx';
+import Listfetchproxy from './pages/Listthunkredux.tsx';
 import { Provider } from 'react-redux'
 import store from './store/index.js'
 
@@ -15,13 +19,33 @@ const router = createBrowserRouter([
     //loader: rootLoader,
     children: [
       {
-        path: "home",
+        path: "/home",
         element: <Home />
         //loader: teamLoader,
       },
       {
-        path: "list",
+        path: "/list",
         element: <List />
+        //loader: teamLoader,
+      },
+      {
+        path: "/listfetch",
+        element: <Listfetch />
+        //loader: teamLoader,
+      },
+      {
+        path: "/listcustomhook",
+        element: <Listcustomhook />
+        //loader: teamLoader,
+      },
+      {
+        path: "/listthunkredux",
+        element: <Listthunkredux />
+        //loader: teamLoader,
+      },
+      {
+        path: "/listfetchproxy",
+        element: <Listfetchproxy />
         //loader: teamLoader,
       },
     ],
