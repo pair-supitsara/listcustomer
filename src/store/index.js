@@ -8,5 +8,4 @@ const store = configureStore({
 })
 
 export const authenActions = authenSlice.actions
-
 export default store;
